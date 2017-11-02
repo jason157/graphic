@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1002</width>
+    <height>624</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="image1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1000</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="image2">
+    <property name="geometry">
+     <rect>
+      <x>1001</x>
+      <y>0</y>
+      <width>20</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1002</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="actionClose"/>
+    <addaction name="actionRecent"/>
+   </widget>
+   <widget class="QMenu" name="menuShow">
+    <property name="title">
+     <string>Show</string>
+    </property>
+    <addaction name="actionScan"/>
+    <addaction name="actionSlide"/>
+    <addaction name="actionXmirror"/>
+    <addaction name="actionYmirror"/>
+    <addaction name="actionFadeIN"/>
+    <addaction name="actionClock90"/>
+    <addaction name="actionAntiClock90"/>
+    <addaction name="actionClock180"/>
+   </widget>
+   <widget class="QMenu" name="menuTran">
+    <property name="title">
+     <string>Trans</string>
+    </property>
+    <addaction name="actionToGray"/>
+    <addaction name="action256to8bits"/>
+    <addaction name="actionToBin"/>
+   </widget>
+   <widget class="QMenu" name="menuEnhance">
+    <property name="title">
+     <string>Enhance</string>
+    </property>
+    <addaction name="actionSharpen"/>
+   </widget>
+   <widget class="QMenu" name="menuEdgeDetection">
+    <property name="title">
+     <string>EdgeDetection</string>
+    </property>
+    <addaction name="actionRoberts"/>
+    <addaction name="actionContour"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionUage"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuShow"/>
+   <addaction name="menuTran"/>
+   <addaction name="menuEnhance"/>
+   <addaction name="menuEdgeDetection"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionNew">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionRecent">
+   <property name="text">
+    <string>Recent</string>
+   </property>
+  </action>
+  <action name="actionScan">
+   <property name="text">
+    <string>Scan</string>
+   </property>
+  </action>
+  <action name="actionSlide">
+   <property name="text">
+    <string>Slide</string>
+   </property>
+  </action>
+  <action name="actionXmirror">
+   <property name="text">
+    <string>Xmirror</string>
+   </property>
+  </action>
+  <action name="actionYmirror">
+   <property name="text">
+    <string>Ymirror</string>
+   </property>
+  </action>
+  <action name="actionFadeIN">
+   <property name="text">
+    <string>FadeIn</string>
+   </property>
+  </action>
+  <action name="actionClock90">
+   <property name="text">
+    <string>Clock90</string>
+   </property>
+  </action>
+  <action name="actionAntiClock90">
+   <property name="text">
+    <string>AntiClock90</string>
+   </property>
+  </action>
+  <action name="actionClock180">
+   <property name="text">
+    <string>Clock180</string>
+   </property>
+  </action>
+  <action name="actionToGray">
+   <property name="text">
+    <string>toGray</string>
+   </property>
+  </action>
+  <action name="action256to8bits">
+   <property name="text">
+    <string>256to8bits</string>
+   </property>
+  </action>
+  <action name="actionToBin">
+   <property name="text">
+    <string>toBin</string>
+   </property>
+  </action>
+  <action name="actionSharpen">
+   <property name="text">
+    <string>Sharpen</string>
+   </property>
+  </action>
+  <action name="actionUage">
+   <property name="text">
+    <string>Uage</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionRoberts">
+   <property name="text">
+    <string>Roberts</string>
+   </property>
+  </action>
+  <action name="actionContour">
+   <property name="text">
+    <string>Contour</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

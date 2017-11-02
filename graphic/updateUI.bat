@@ -1,0 +1,1 @@
+pyuic5 graphic_withtab.ui -o graphicUI_withtab.py
